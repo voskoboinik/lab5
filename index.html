@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный блог студента</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <h1>Личный блог студента</h1>
+  </header>
+
+  <!-- НАВИГАЦИЯ -->
+  <nav class="nav">
+    <a href="#home">Главная</a>
+    <a href="#news">Новости</a>
+    <a href="#about">О блоге</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <!-- ГЛАВНЫЙ РАЗДЕЛ: Приветствие с фоном -->
+
+<section id="home" class="section home-section">
+  <div class="home-image-container">
+    <img src="wel.png" alt="Приветствие" class="home-image">
+    <div class="home-text">
+      <p>Привет! Это мой блог, здесь я делюсь мыслями, проектами и интересными находками.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- НОВОСТИ -->
+  <section id="news" class="section alt">
+    <h2>Новости</h2>
+    <div class="news-grid">
+      <article class="news-item">
+        <!-- Заменяй news1.jpg на своё фото -->
+        <img src="portf.png" alt="Новость 1">
+        <h3>Создание портфолио для студентов</h3>
+        <p>Пошаговое руководство, как собрать портфолио и выделиться среди других студентов.</p>
+      </article>
+      <article class="news-item">
+        <img src="online.jpg" alt="Новость 2">
+        <h3>Как эффективно учиться онлайн</h3>
+        <p>Советы и трюки для продуктивного обучения и планирования времени в университете.</p>
+      </article>
+      <article class="news-item">
+        <img src="htmlcss.jpg" alt="Новость 3">
+        <h3>Мой опыт работы с HTML и CSS</h3>
+        <p>Примеры первых проектов и ошибки, которые помогли мне учиться быстрее.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- О БЛОГЕ -->
+<section id="about" class="section about-section">
+  <h2>О блоге</h2>
+  <div class="about-container">
+    <!-- Фото автора -->
+    <img src="me.jpg" alt="Фото студента" class="about-image">
+    <!-- Текст справа -->
+    <div class="about-text">
+      <p>Меня зовут Люда, я студент Физико-технического института. Этот блог создан для того, чтобы делиться полезной информацией.</p>
+      <p>Здесь вы найдете статьи, примеры проектов и небольшие руководства по созданию сайтов.</p>
+    </div>
+  </div>
+  <!-- Аккордеон -->
+  <div class="accordion-item">
+  <h3 class="accordion-title">Почему я создала этот блог</h3>
+  <div class="accordion-content">
+    Мне хотелось иметь место, где можно делиться своими проектами, идеями и заметками. 
+    Этот блог помогает мне развиваться, структурировать знания и вдохновлять других студентов.
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h3 class="accordion-title">Какие темы я затрагиваю</h3>
+  <div class="accordion-content">
+    Здесь я пишу о программировании, учебе, саморазвитии, дизайне и всем, что делает жизнь студента интереснее. 
+    Иногда делюсь советами по HTML, CSS и созданию сайтов.
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h3 class="accordion-title">Мои цели на будущее</h3>
+  <div class="accordion-content">
+    Продолжать изучать новые технологии, делать проекты и показать, что веб-разработка может быть творческой и увлекательной.
+  </div>
+</div>
+</section>
+
+<!-- ФОТОГАЛЕРЕЯ С ФИЛЬТРАМИ -->
+<section id="gallery" class="section">
+  <h2>Мои работы и фото</h2>
+
+  <!-- Фильтры -->
+  <div class="filters">
+    <button data-category="all">Все</button>
+    <button data-category="projects">Проекты</button>
+    <button data-category="study">Учёба</button>
+    <button data-category="hobby">Хобби</button>
+  </div>
+
+  <!-- Галерея -->
+  <div class="gallery">
+    <img src="1.jpg" data-category="projects" alt="Проект 1">
+    <img src="2.jpg" data-category="projects" alt="Проект 2">
+    <img src="s1.jpg" data-category="study" alt="Учёба 1">
+    <img src="h1.jpg" data-category="hobby" alt="Хобби 1">
+    <img src="h2.jpg" data-category="hobby" alt="Хобби 2">
+  </div>
+  <div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+</section>
+
+
+  <!-- КОНТАКТЫ -->
+  <section id="contacts" class="section alt">
+    <h2>Контакты</h2>
+    <p>Связаться со мной можно по электронной почте или через соцсети:</p>
+    <ul>
+      <li>Email: voskoboinik.ld@gmail.com</li>
+      <li>Телефон: +(373) 778-34-162</li>
+      <li>Telegram: @voskoboinik</li>
+    </ul>
+  </section>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <p>© 2025 Все права защищены.</p>
+  </footer>
+  <button id="scrollTopBtn" class="scroll-btn">↑</button>
+  <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ФОТО -->
+  <script src="script.js"></script>
+</body>
+</html>
